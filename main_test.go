@@ -25,22 +25,22 @@ func TestWalk(t *testing.T) {
 			[]string{"TURN 0", "WALK 0"},
 		},
 		{
-			"First quartile",
+			"First quadrant",
 			[]string{"WALK 2", "TURN 270", "WALK 2"},
 			[]string{"TURN 315", fmt.Sprintf("WALK %v", math.Sqrt(2*2 + 2*2))},
 		},
 		{
-			"Second quartile",
+			"Second quadrant",
 			[]string{"WALK 2", "TURN 90", "WALK 2"},
 			[]string{"TURN 45", fmt.Sprintf("WALK %v", math.Sqrt(2*2 + 2*2))},
 		},
 		{
-			"Third quartile",
+			"Third quadrant",
 			[]string{"TURN 90", "WALK 2", "TURN 90", "WALK 2"},
 			[]string{"TURN 135", fmt.Sprintf("WALK %v", math.Sqrt(2*2 + 2*2))},
 		},
 		{
-			"Fourth quartile",
+			"Fourth quadrant",
 			[]string{"TURN 270", "WALK 2", "TURN 270", "WALK 2"},
 			[]string{"TURN 225", fmt.Sprintf("WALK %v", math.Sqrt(2*2 + 2*2))},
 		},
