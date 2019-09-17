@@ -34,7 +34,7 @@ func generateAngleAndDistance(x, y float64) (distance, angleDegrees float64) {
 	}
 	angleDegrees = (angle * (180 / math.Pi)) - 90
 	if angleDegrees < 0 {
-		angleDegrees = 360 - angleDegrees
+		angleDegrees = 360 + angleDegrees
 	}
 	return distance, angleDegrees
 }

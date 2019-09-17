@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+	"math"
 	"reflect"
 	"testing"
 )
@@ -21,6 +23,26 @@ func TestWalk(t *testing.T) {
 			"Return to (0,0)",
 			[]string{"WALK 2", "TURN 90", "WALK 2", "TURN 90", "WALK 2", "TURN 90", "WALK 2"},
 			[]string{"TURN 0", "WALK 0"},
+		},
+		{
+			"First quartile",
+			[]string{"WALK 2", "TURN 270", "WALK 2"},
+			[]string{"TURN 315", fmt.Sprintf("WALK %v", math.Sqrt(2*2 + 2*2))},
+		},
+		{
+			"Second quartile",
+			[]string{"WALK 2", "TURN 90", "WALK 2"},
+			[]string{"TURN 45", fmt.Sprintf("WALK %v", math.Sqrt(2*2 + 2*2))},
+		},
+		{
+			"Third quartile",
+			[]string{"TURN 90", "WALK 2", "TURN 90", "WALK 2"},
+			[]string{"TURN 135", fmt.Sprintf("WALK %v", math.Sqrt(2*2 + 2*2))},
+		},
+		{
+			"Fourth quartile",
+			[]string{"TURN 270", "WALK 2", "TURN 270", "WALK 2"},
+			[]string{"TURN 225", fmt.Sprintf("WALK %v", math.Sqrt(2*2 + 2*2))},
 		},
 	}
 
