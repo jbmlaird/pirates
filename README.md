@@ -2,7 +2,7 @@
 
 You are shipwrecked with a PC that only has Golang installed. You find a scroll with some instructions on it. The scroll consists of an array of instructions of only a single word, either TURN or WALK followed by a space and a number. 
 
-For TURN instructions the number is in degrees so 90 would be a left turn and 270 for right. WALK is followed by a number of steps forward.Start facing north at the center of the island (by the obligatory palm tree). What is the list of instruction you can use to get to the end of the trail? and how few can you do it in? As usual, points for brevity, verbosity, and performance and of course finding the treasure
+For TURN instructions the number is in degrees so 90 would be a left turn and 270 for right. WALK is followed by a number of steps forward. Start facing north at the center of the island (by the obligatory palm tree). What is the list of instructions you can use to get to the end of the trail and how few can you do it in? As usual, points for brevity, verbosity, and performance and of course finding the treasure.
 
 The instructions are as follows:
 
