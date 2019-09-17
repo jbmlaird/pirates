@@ -19,7 +19,7 @@ func main() {
 	fmt.Printf("Execution time: %v", time.Since(start))
 }
 
-var errEmptySlice = errors.New("Don't be silly; you're standing on the treasure, my boy!")
+var errEmptySlice = errors.New("awkward. You got the parchment wet and all the instructions seem to have disappeared 🤔")
 
 func walk(commands []string) ([]string, error) {
 	if len(commands) < 1 {
